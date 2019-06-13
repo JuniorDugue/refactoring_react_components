@@ -8,9 +8,9 @@ import "./styles.css";
 function App() {
   return (
     <div className="ui container comments">
-      <CommentDetail author="Sam" />
-      <CommentDetail author="Alex" />
-      <CommentDetail author="Jane" />
+      <CommentDetail author="Sam" timeAgo="Today at 6:00PM" />
+      <CommentDetail author="Alex" timeAgo="Today at 12:00AM" />
+      <CommentDetail author="Jane" timeAgo="Today at 2:30PM" />
     </div>
   );
 }
