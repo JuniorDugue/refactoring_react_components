@@ -8,9 +8,24 @@ import "./styles.css";
 function App() {
   return (
     <div className="ui container comments">
-      <CommentDetail author="Sam" timeAgo="Today at 6:00PM" />
-      <CommentDetail author="Alex" timeAgo="Today at 12:00AM" />
-      <CommentDetail author="Jane" timeAgo="Today at 2:30PM" />
+      <CommentDetail
+        author="Sam"
+        timeAgo="Today at 6:00PM"
+        commentText="Nice blog post!"
+        avatar={faker.image.avatar()}
+      />
+      <CommentDetail
+        author="Alex"
+        timeAgo="Today at 12:00AM"
+        commentText="Amazing post!"
+        avatar={faker.image.avatar()}
+      />
+      <CommentDetail
+        author="Jane"
+        timeAgo="Today at 2:30PM"
+        commentText="Good one!"
+        avatar={faker.image.avatar()}
+      />
     </div>
   );
 }
