@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import faker from "faker";
 import CommentDetail from "./components/CommentDetail"; //because of webpack we don't have to include .js
+import ApprovalCard from "./components/ApprovalCard";
 
 import "./styles.css";
 
 function App() {
   return (
     <div className="ui container comments">
+    <ApprovalCard/>
       <CommentDetail
         author="Sam"
         timeAgo="Today at 6:00PM"
