@@ -9,30 +9,36 @@ import "./styles.css";
 function App() {
   return (
     <div className="ui container comments">
-    <ApprovalCard>
-      <CommentDetail
+      <ApprovalCard>
+        <div>
+          <h4>Warning!</h4>
+          <p>Are you sure!?</p>
+        </div>
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
           author="Sam"
           timeAgo="Today at 6:00PM"
           commentText="Nice blog post!"
           avatar={faker.image.avatar()}
-      />
-    </ApprovalCard>
-    <ApprovalCard>
-      <CommentDetail
-        author="Alex"
-        timeAgo="Today at 12:00AM"
-        commentText="Amazing post!"
-        avatar={faker.image.avatar()}
-      />
-    </ApprovalCard>
-    <ApprovalCard>
-      <CommentDetail
-        author="Jane"
-        timeAgo="Today at 2:30PM"
-        commentText="Good one!"
-        avatar={faker.image.avatar()}
-      />
-    </ApprovalCard>
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Alex"
+          timeAgo="Today at 12:00AM"
+          commentText="Amazing post!"
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
+      <ApprovalCard>
+        <CommentDetail
+          author="Jane"
+          timeAgo="Today at 2:30PM"
+          commentText="Good one!"
+          avatar={faker.image.avatar()}
+        />
+      </ApprovalCard>
     </div>
   );
 }
